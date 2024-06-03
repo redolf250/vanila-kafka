@@ -1,6 +1,5 @@
 package com.redolf.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,12 +9,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RewardAccumulator {
+public class RewardPointAccumulator {
     private String customerId;
-    private String customerName;
-    private String customerNumber;
-    private double totalAmount;
     private int currentRewardPoints;
-    private int daysFromLastPurchase;
     private int totalRewardPoints;
+    private String lastPurchaseDate;
+    private int daysFromLastPurchase;
 }

@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Purchase {
+    private String customerId;
     private String firstName;
     private String lastName;
     private String customerNumber;
